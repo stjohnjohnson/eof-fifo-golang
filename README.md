@@ -24,31 +24,37 @@ Successfully built 2d23db5e8ff0
 
 $ docker run --rm 2d23db5e8ff0
 go version go1.10 linux/amd64
-WRITER << opened /tmp/tmp.pghBSjMs2H/fifo: &{file:0xc4200840f0}|<nil>
+STARTED /tmp/tmp.6if4ZSWnZ8/fifo
+READER >> created
+WRITER << opened: &{file:0xc42008c000}|<nil>
 WRITER << encoder created
-READER >> created &{buf:[....] rd:0xc42008a020 r:0 w:0 err:<nil> lastByte:-1 lastRuneSize:-1}
+WRITER << written line0, <nil>
+READER >> read 1 line: line0
 WRITER << written line1, <nil>
 READER >> read 1 line: line1
 WRITER << written line2, <nil>
 READER >> read 1 line: line2
-WRITER << closed /tmp/tmp.pghBSjMs2H/fifo: <nil>
+WRITER << closed: <nil>
 READER >> read finished: EOF
+ALL DONE
 ```
 
 ### OSX
 
 ```bash
-$ ./test.sh
 go version go1.10 darwin/amd64
-WRITER << opened /var/folders/k_/zdt3jb2j7gx1rnf379k_51gh0000gn/T/tmp.4n5wTPm6/fifo: &{file:0xc4200840f0}|<nil>
+STARTED /var/folders/k_/zdt3jb2j7gx1rnf379k_51gh0000gn/T/tmp.ksHGLSvs/fifo
+READER >> created
+WRITER << opened: &{file:0xc42009e000}|<nil>
 WRITER << encoder created
-READER >> created &{buf:[....] rd:0xc42000c030 r:0 w:0 err:<nil> lastByte:-1 lastRuneSize:-1}
+WRITER << written line0, <nil>
+READER >> read 1 line: line0
 WRITER << written line1, <nil>
 READER >> read 1 line: line1
 WRITER << written line2, <nil>
 READER >> read 1 line: line2
-WRITER << closed /var/folders/k_/zdt3jb2j7gx1rnf379k_51gh0000gn/T/tmp.4n5wTPm6/fifo: <nil>
-^C%
+WRITER << closed: <nil>
+^C
 signal: interrupt
 ```
 
