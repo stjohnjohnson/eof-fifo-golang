@@ -24,7 +24,6 @@ Successfully built 2d23db5e8ff0
 
 $ docker run --rm 2d23db5e8ff0
 go version go1.10 linux/amd64
-Linux
 WRITER << opened /tmp/tmp.pghBSjMs2H/fifo: &{file:0xc4200840f0}|<nil>
 WRITER << encoder created
 READER >> created &{buf:[....] rd:0xc42008a020 r:0 w:0 err:<nil> lastByte:-1 lastRuneSize:-1}
@@ -41,7 +40,6 @@ READER >> read finished: EOF
 ```bash
 $ ./test.sh
 go version go1.10 darwin/amd64
-Darwin
 WRITER << opened /var/folders/k_/zdt3jb2j7gx1rnf379k_51gh0000gn/T/tmp.4n5wTPm6/fifo: &{file:0xc4200840f0}|<nil>
 WRITER << encoder created
 READER >> created &{buf:[....] rd:0xc42000c030 r:0 w:0 err:<nil> lastByte:-1 lastRuneSize:-1}
